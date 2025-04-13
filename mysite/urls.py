@@ -21,4 +21,6 @@ urlpatterns = [
     path("bishal/", include("bishal.urls")),
     path('admin/', admin.site.urls),
     path("binodrimal/", include("binodrimal.urls")),
+    path('elitexp/', include('elitexp.urls')),
+
 ]
