@@ -23,4 +23,6 @@ from django.http import HttpResponse
 urlpatterns = [
     path('tejapp/', include("tejapp.urls")),
     path('admin/', admin.site.urls),
+    path('elitexp/', include('elitexp.urls')),
+
 ]
