@@ -15,6 +15,7 @@ jobs:
         echo "hello world"
         hostname
         cd /var/www/html/collab
+        git pull
         git checkout manozdevops
         git pull origin manozedvops
   Test:
