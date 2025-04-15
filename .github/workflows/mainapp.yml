@@ -17,7 +17,8 @@ jobs:
         cd /var/www/html/collab
         git pull
         git checkout manozdevops
-        git pull origin manozedvops
+        git pull origin manozdevops
+        systemctl restart collab.service
   Test:
     runs-on: self-hosted
     steps: 
