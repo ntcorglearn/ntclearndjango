@@ -14,4 +14,20 @@ jobs:
       run: |
         echo "hello world"
         hostname
+        cd /var/www/html/collab
+        git checkout manozdevops
+        git pull origin manozedvops
+  Test:
+    runs-on: self-hosted
+    steps: 
+     - name: this is demo test plan
+       run: echo "Hello test job" 
+
+  Deploy: 
+    runs-on: self-hosted 
+    steps: 
+      - name: this is deploy phase
+        run: echo "Hello deploy job"
+
+    
 
