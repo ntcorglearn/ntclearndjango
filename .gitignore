@@ -3,6 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 app/localdev
+app/mysite/setting.py
+app/db.sqlite3
 
 # C extensions
 *.so
