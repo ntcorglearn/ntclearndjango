@@ -13,4 +13,5 @@ jobs:
     - name: Hello world check
       run: |
         echo "hello world"
+        hostname
 
