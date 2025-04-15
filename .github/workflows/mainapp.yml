@@ -1,0 +1,16 @@
+name: Django CI
+
+on:
+  push:
+    branches: [ "manozdevops" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Hello world check
+      run: |
+        echo "hello world"
+
