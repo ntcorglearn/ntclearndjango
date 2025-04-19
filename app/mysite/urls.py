@@ -25,4 +25,5 @@ urlpatterns = [
     path("ashish_6858/", include("ashish_6858.urls")),
     path('elitexp/', include('elitexp.urls')),
     path("manoz/", include("manoz.urls")),
+    path("kiranapp/",include("kiranapp.urls")),
 ]
