@@ -1,0 +1,32 @@
+name: Django CI
+
+on:
+  push:
+    branches: [ "manozdevops" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+    - name: Hello world check
+      run: |
+        echo "hello world"
+        hostname
+        cd /var/www/html/collab
+        git pull
+        git checkout manozdevops
+        git pull origin manozdevops
+        systemctl restart collab.service
+  Test:
+    runs-on: self-hosted
+    steps: 
+     - name: this is demo test plan
+       run: echo "Hello test job" 
+
+  Deploy: 
+    runs-on: self-hosted 
+    steps: 
+      - name: this is deploy phase
+        run: echo "Hello deploy job"
